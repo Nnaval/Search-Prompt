@@ -7,7 +7,7 @@ import Profile from "@components/Profile";
 
 import React from "react";
 
-const myProfile = () => {
+const page = () => {
   const router = useRouter();
 
   const { data: session } = useSession();
@@ -18,7 +18,7 @@ const myProfile = () => {
     const fetchPosts = async () => {
       const response = await fetch(`/api/users/${session?.user.id}/posts`);
       const data = await response.json();
-      console.log("data =", data);
+      // console.log("data =", data);
 
       setPosts(data);
     };
@@ -72,4 +72,4 @@ const myProfile = () => {
   );
 };
 
-export default myProfile;
+export default page;

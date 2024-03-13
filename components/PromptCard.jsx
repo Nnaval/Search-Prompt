@@ -24,7 +24,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
         <div className="flex-1 flex justify-start items-center gap-3 cursor-pointer">
           <Image
             src={post.creator.image}
-            alt="user_image"
+            alt="user image"
             width={40}
             height={40}
             className="rounded-full object-contain"
@@ -54,6 +54,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
             }
             width={12}
             height={12}
+            alt="ai image"
           />
         </div>
       </div>
